@@ -5,12 +5,14 @@ body {
 }
 
 .container {
+  width: 75%;
   background-color: hsl(0, 0%, 100%);
   padding: 40px 40px 80px 40px;
   border-radius: 25px 25px 40% 25px;
 }
 
 .container input {
+  width: 90px;
   padding: 20px;
   margin: 10px;
 }
@@ -20,9 +22,20 @@ body {
   letter-spacing: 3px;
   color: hsl(0, 1%, 44%);
 }
-.result {
-  margin-top: 50px;
+.box-2 {
+  text-align: end;
 }
+button {
+  background-color: hsl(259, 100%, 65%);
+  padding: 50px;
+  border-radius: 50%;
+  border: transparent;
+}
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
 .result p {
   font-size: 80px;
   font-style: italic;
