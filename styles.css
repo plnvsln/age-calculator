@@ -1,0 +1,38 @@
+body {
+  margin: 250px 500px;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px 40px 80px 40px;
+  border-radius: 25px 25px 40% 25px;
+}
+
+.container input {
+  padding: 20px;
+  margin: 10px;
+}
+
+.container label {
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: hsl(0, 1%, 44%);
+}
+.result {
+  margin-top: 50px;
+}
+.result p {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 800;
+  margin: -30px 0px;
+}
+.result span {
+  color: hsl(259, 100%, 65%);
+}
+.attribution {
+  font-size: 13px;
+  margin: 20px;
+}
