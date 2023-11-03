@@ -21,6 +21,9 @@ body {
   font-size: 15px;
   letter-spacing: 3px;
   color: hsl(0, 1%, 44%);
+  position: relative;
+  top: -45px;
+  left: 60px;
 }
 .box-2 {
   text-align: end;
@@ -48,4 +51,36 @@ button:hover {
 .attribution {
   font-size: 13px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 90px auto;
+  }
+  .container {
+    width: 90%;
+    padding: 40px 10px;
+  }
+  .container input {
+    width: 50px;
+    padding: 10px 5px;
+    margin: 10px 0px;
+  }
+
+  .container label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+  }
+
+  button {
+    padding: 40px;
+  }
+
+  .result p {
+    font-size: 40px;
+  }
+  .attribution {
+    font-size: 15px;
+  }
 }
