@@ -1,30 +1,45 @@
 body {
-  margin: 250px 500px;
+  margin: 150px auto;
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 0%, 94%);
 }
 
 .container {
-  width: 75%;
+  width: 50%;
   background-color: hsl(0, 0%, 100%);
   padding: 40px 40px 80px 40px;
   border-radius: 25px 25px 40% 25px;
 }
 
-.container input {
+/*.container input {
   width: 90px;
   padding: 20px;
   margin: 10px;
+}*/
+.box-1 {
+  display: flex;
+  width: 70%;
 }
 
-.container label {
+.input-box label {
   font-size: 15px;
   letter-spacing: 3px;
   color: hsl(0, 1%, 44%);
-  position: relative;
-  top: -45px;
-  left: 60px;
 }
+
+.input-box input {
+  padding: 15px;
+  width: 80px;
+  border-radius: 5px;
+  border: hsl(0, 1%, 44%) solid 1px;
+}
+.input-box ::placeholder {
+  color: hsl(0, 1%, 44%);
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+
 .box-2 {
   text-align: end;
 }
