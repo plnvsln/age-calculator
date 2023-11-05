@@ -1,11 +1,12 @@
 body {
-  margin: 100px auto;
+  height: 90vh;
+  margin: 80px auto 0px;
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 0%, 94%);
 }
 
 .container {
-  width: 50%;
+  max-width: 550px;
   background-color: hsl(0, 0%, 100%);
   padding: 40px 40px 80px 40px;
   border-radius: 25px 25px 40% 25px;
@@ -35,12 +36,18 @@ body {
   font-size: 20px;
   text-align: center;
 }
-
+small {
+  font-size: 0.6rem;
+  display: block;
+  padding: 5px;
+  color: red;
+  font-style: italic;
+}
 .box-2 {
   text-align: end;
 }
 hr {
-  width: 84%;
+  width: 79%;
   border: 1px solid hsl(0, 0%, 86%);
   margin: 3px;
   display: inline-block;
@@ -67,7 +74,7 @@ button:hover {
 }
 .attribution {
   font-size: 13px;
-  margin: 20px;
+  margin: 10px;
   text-align: center;
 }
 
@@ -93,6 +100,9 @@ button:hover {
     font-size: 10px;
     letter-spacing: 3px;
     color: hsl(0, 1%, 44%);
+  }
+  small {
+    font-size: 0.3rem;
   }
   hr {
     width: 70%;
