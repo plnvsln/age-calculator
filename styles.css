@@ -4,7 +4,15 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 0%, 94%);
 }
-
+.show-error label {
+  color: red !important;
+}
+.show-error input {
+  border-color: red !important;
+}
+.show-error small {
+  display: block;
+}
 .container {
   max-width: 550px;
   background-color: hsl(0, 0%, 100%);
@@ -42,10 +50,13 @@ small {
   padding: 5px;
   color: red;
   font-style: italic;
+  display: none;
 }
+
 .box-2 {
   text-align: end;
 }
+
 hr {
   width: 79%;
   border: 1px solid hsl(0, 0%, 86%);

@@ -25,22 +25,22 @@
   <body>
     <div class="container">
       <div class="box-1">
-        <div class="input-box">
+        <div class="input-box input-box--1">
           <label for="day">DAY</label>
           <input type="number" id="day" placeholder="DD" />
-          <small id="day-error"></small>
+          <small class="day-error-msg">Must be a valid day</small>
         </div>
 
-        <div class="input-box">
+        <div class="input-box input-box--2">
           <label for="day">MONTH</label>
           <input type="number" id="month" placeholder="MM" />
-          <small id="month-error"></small>
+          <small class="month-error-msg">Must be a valid month</small>
         </div>
 
-        <div class="input-box">
+        <div class="input-box input-box--3">
           <label for="day">YEAR</label>
           <input type="number" id="year" placeholder="YYYY" />
-          <small id="year-error"></small>
+          <small class="year-error-msg">Must be in the past</small>
         </div>
       </div>
       <div class="box-2">
@@ -60,7 +60,12 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Polina Chernii</a>.
+      >. Coded by
+      <a
+        href="https://github.com/plnvsln/age-calculator/blob/main/app.js"
+        target="_blank"
+        >Polina Chernii</a
+      >.
     </div>
     <script src="app.js"></script>
   </body>
