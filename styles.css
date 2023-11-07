@@ -49,6 +49,7 @@ body {
   font-weight: 900;
   font-size: 20px;
 }
+
 small {
   font-size: 0.6rem;
   display: block;
@@ -68,6 +69,7 @@ hr {
   margin: 3px;
   display: inline-block;
 }
+
 button {
   background-color: hsl(259, 100%, 65%);
   padding: 50px;
@@ -83,14 +85,14 @@ button:hover {
   font-size: 80px;
   font-style: italic;
   font-weight: 800;
-  margin: -30px 0px;
+  margin: -25px 0px;
 }
 .result span {
   color: hsl(259, 100%, 65%);
 }
 .attribution {
   font-size: 13px;
-  margin: 10px;
+  margin: 20px 10px;
   text-align: center;
 }
 
@@ -175,6 +177,9 @@ button:hover {
   label {
     margin-left: 7px;
   }
+  .input-box--3 {
+    margin-left: -25px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   hr {
@@ -185,5 +190,8 @@ button:hover {
   .input-box input,
   label {
     margin: 7px;
+  }
+  .input-box--3 {
+    margin-left: -25px;
   }
 }
