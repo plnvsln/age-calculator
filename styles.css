@@ -132,7 +132,7 @@ button:hover {
     font-size: 40px;
   }
   .attribution {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -154,6 +154,9 @@ button:hover {
   .input-box input,
   label {
     margin-left: 7px;
+  }
+  .attribution {
+    font-size: 10px;
   }
 }
 
