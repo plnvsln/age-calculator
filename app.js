@@ -22,37 +22,59 @@ function checkInputErrors() {
   } else {
     box3.classList.remove("show-error");
   }
-  age();
+
+  //when the input is correct - func calculateAge() should be executed
+  if (
+    dayInput <= 31 &&
+    dayInput > 1 &&
+    monthInput <= 12 &&
+    monthInput > 1 &&
+    yearInput <= 2023 &&
+    yearInput > 1
+  ) {
+    calculateAge();
+  }
 }
+
 let button = document.getElementById("button");
 button.addEventListener("click", checkInputErrors);
 //
-function age() {
+function calculateAge() {
   let dayInput = Number(document.getElementById("day").value);
   let monthInput = Number(document.getElementById("month").value);
   let yearInput = Number(document.getElementById("year").value);
-
   let today = new Date();
-
-  let currentDate = today.getDate();
+  //console.log(today);
+  let currentDay = today.getDate();
   let currentMonth = today.getMonth() + 1;
   let currentYear = today.getFullYear();
-
+  //console.log(currentDate);
+  //console.log(currentMonth);
+  //console.log(currentYear);
   let months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-  if (dayInput > currentDate) {
-    currentDate = currentDate + months[currentMonth - 1];
+  if (dayInput > currentDay) {
+    currentDay = currentDay + months[currentMonth - 1];
     currentMonth = currentMonth - 1;
+    //console.log(currentDay); //correct
+    //console.log(currentMonth); //correct
   }
   if (monthInput > currentMonth) {
     currentMonth = currentMonth + 12;
     currentYear = currentYear - 1;
   }
-  let dayResult = currentDate - dayInput;
-  let monthResult = currentMonth - monthInput;
-  let yearResult = currentYear - yearInput;
+  let dayResult = currentDay - dayInput;
 
-  document.getElementById("result-month").innerHTML = `${dayResult}`;
-  document.getElementById("result-year").innerHTML = `${monthResult}`;
-  document.getElementById("result-days").innerHTML = `${yearResult}`;
+  console.log(dayResult);
+
+  let monthResult = currentMonth - monthInput;
+  console.log(monthResult);
+  let yearResult = currentYear - yearInput;
+  console.log(currentYear);
+  console.log(yearInput);
+  console.log(yearResult);
+
+  document.getElementById("result-days").innerHTML = `${dayResult}`;
+  document.getElementById("result-month").innerHTML = `${monthResult}`;
+  document.getElementById("result-year").innerHTML = `${yearResult}`;
 }
